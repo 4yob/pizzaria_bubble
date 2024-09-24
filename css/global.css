@@ -2,12 +2,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:rgb(112, 52, 28);
+    background-color:#6b2d0f;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100px;
+    height: 150px;
     z-index: 1000;
 }
 
@@ -19,7 +19,7 @@ header {
 
 .links a {
     text-decoration: none;
-    color: #833400;
+    color: #fff;
     font-size: 1.2rem;
     border-bottom: 3px solid transparent;
     border-radius: 6px;
@@ -27,19 +27,29 @@ header {
 }
 
 .links a:hover {
-    border-bottom: 3px solid #833400;
-    color: #833400;
+    border-bottom: 3px solid #fff;
+    color: #fff;
     transform: scale(1.05);
 }
 
 .logo img {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     margin-left: 100px;
-    margin-top: 200px;
     border-radius: 50%;
 }
 
 body {
     background-color: rgb(252, 252, 252);
+}
+
+.img-fundo {
+    width: 100%;
+    height: auto;
+    left: 0;
+}
+
+.introducao-site {
+    padding: 2% 0 0 5%;
+    width: 50%;
 }
