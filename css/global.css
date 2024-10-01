@@ -2,7 +2,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:#6b2d0f;
+    background-color: #6b2d0f;
     position: fixed;
     top: 0;
     left: 0;
@@ -41,8 +41,6 @@ header {
 
 body {
     background-color: rgb(252, 252, 252);
-}
-
 }
 
 .img-fundo {
