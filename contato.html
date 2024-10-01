@@ -4,42 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="stylesheet" href="./css/contato.css">
 </head>
 <body>
     <header>
-        <h1 class="site-title">Contato</h1>
         <div class="logo">
-            <img src="" alt="">
+            <img src="./img/bubble.png" alt="">
         </div>
     
-        <ul class="links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="contato.html">Fale conosco</a></li>
-        </ul>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contato.html">Fale conosco</a>
+        </div>
     </header>
-        <form>
-            <fieldset>
-                <legend>Faça seu login!</legend>
 
-                <label for="nome">Nome completo:</label>
-                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required maxlength="100">
+    <div class="top1"></div>
+    <div class="top"><h1>C O N T A T O</h1></div>
+    <div class="top2"></div>
 
-                <label for="emal">Seu e-mail::</label>
-                <input type="text" id="email" name="email" placeholder="Digite seu email" required>
-            </fieldset>
+    <main>
+        <div class="esquerda">
+            <div class="endereco">
+                <div class="icone-casa">
+                    <img src="./img/icone-casa.png" alt="">
+                </div>
+                <div class="casa-text">
+                    <h3>Endereço</h3>
+                    <p>Rua das Pizzas, 123<br>Vila Santo Antonio - Valinhos/SP</p>
+                </div>
+            </div>
+            <div class="telefone">
+                <div class="icone-telefone">
+                    <img src="./img/icone-phone.png" alt="">
+                </div>
+                <div class="telefone-text">
+                    <h3>Telefone</h3>
+                    <p>(11) 1234-5678<br>(11) 9876-5309</p>
+                </div>
+            </div>
+            <div class="horario">
+                <div class="icone-relogio">
+                    <img src="./img/icone-relogio.png" alt="">
+                </div>
+                <div class="horario-text">
+                    <h3>Horário de Funcionamento</h3>
+                    <p><b>2ª a 6ª feira</b> – das 12h00 às 15h00 e das 18h30 às 23h<br>
+                        <b>Sábados, Domingos e Feriados</b> – das 12h00 às 16h00 e das 18h30 às 23h00</p>
+                </div>
+            </div>
+            <div class="email">
+                <div class="icone-email">
+                    <img src="./img/icone-email.png" alt="">
+                </div>
+                <div class="email-text">
+                    <h3>E-mail</h3>
+                    <p>contato@pizzaria.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="meio">
+            <h1>Envie uma mensagem!</h1>
+            <form>
+                <fieldset>
+                    <label for="nome">Nome*</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required maxlength="100">
 
-            <fieldset>
-                <label for="nome">Telefone:</label>
-                <input type="text" id="telefone" name="telefone" placeholder="Digite seu telefone" required maxlength="100">
-            </fieldset>
+                    <label for="phone">Número para contato*</label>
+                    <input type="text" id="phone" name="phone" placeholder="(11) 1234-5678" required maxlength="15">
 
-            <fieldset>
-                <label for="mensagem">Deixe sua mensagem!</label>
-                <textarea name="mensagem" id="mensagem" rows="5" placeholder="Deixe sua mensagem!" required></textarea>
-            </fieldset>
+                    <label for="email">E-mail*</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@gmail.com" required>
 
-            <button type="submit">Enviar</button>
-        </form>
+                    <label for="nome">Assunto*</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite o assunto" required maxlength="100">
+
+                    <label for="mensagem">Mensagem*</label>
+                    <textarea name="mensagem" id="mensagem" rows="5" placeholder="Deixe sua mensagem!" required></textarea>
+                </fieldset>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+
 </body>
 </html>
