@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +8,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:#6b2d0f;
+    background-color: #6b2d0f;
     top: 0;
     left: 0;
     width: 100%;
@@ -17,8 +17,8 @@ header {
 }
 
 main {
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .links {
@@ -193,13 +193,13 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-form fieldset{
+form fieldset {
     border: 1px solid #ddd;
     padding: 10px;
     margin-bottom: 10px;
 }
 
-form label{
+form label {
     display: block;
     margin-bottom: 5px;
     color: #333;
@@ -219,15 +219,16 @@ form textarea {
     border: 1px solid #ddd;
     border-radius: 5px;
 }
+
 form input[type="radio"],
-form input[type="checkbox"]{
+form input[type="checkbox"] {
     margin-right: 10px;
 }
 
 form button {
     cursor: pointer;
     background-color: #5cb85c;
-    color:#fff;
+    color: #fff;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
@@ -238,6 +239,12 @@ form button:hover {
     background-color: #69eb69;
 }
 
+.fim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .fim h1 {
     font-size: 30px;
     color: #333;
@@ -245,4 +252,28 @@ form button:hover {
 
 .fim p {
     color: #333;
+}
+
+@media (max-width: 768px){
+    .topo {
+        flex-direction: column-reverse;
+    }
+    .direita {
+        width: 100%;
+    }
+    .esquerda {
+        width: 100%;
+        padding: 10%;
+    }
+    .logo img{
+        height: 100px;
+        width: 100px;
+        margin-left: 1px;
+    }
+    .links a{
+        font-size: 1rem;
+    }
+    header{
+        justify-content: center;
+    }
 }
