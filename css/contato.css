@@ -81,6 +81,7 @@ body {
 }
 
 .topo {
+    margin-top: 1%;
     display: flex;
     flex-direction: row;
 }
@@ -179,10 +180,8 @@ body {
 
 .direita h1 {
     text-align: center;
-}
-
-.info {
-
+    font-size: 30px;
+    color: #333;
 }
 
 form {
@@ -237,4 +236,13 @@ form button {
 
 form button:hover {
     background-color: #69eb69;
+}
+
+.fim h1 {
+    font-size: 30px;
+    color: #333;
+}
+
+.fim p {
+    color: #333;
 }
