@@ -47,6 +47,7 @@ header {
 body {
     background-color: beige;
 }
+
 main {
     display: flex;
     justify-content: center;
@@ -58,7 +59,6 @@ main .cardapio {
 
 .cardapio {
     display: flex;
-    max-width: 1200px;
     min-width: 1200px;
     flex-direction: column;
     background-color: rgb(243, 242, 242);
@@ -152,6 +152,7 @@ img {
 .cardapio .pizzas p {
     margin-top: 50px;
 }
+
 .cardapio .item .text {
     margin-top: 10px;
     max-width: 150px;
@@ -175,7 +176,7 @@ img {
     justify-content: space-between;
 }
 
-.cardapio .bebidas h1{
+.cardapio .bebidas h1 {
     margin-top: 25px;
 }
 
@@ -193,4 +194,130 @@ img {
 
 .cardapio .bebidas h2 {
     margin-top: 50px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #6b2d0f;
+        position: fixed;
+        top: 0;
+        max-width: 1000px;
+        height: 150px;
+
+    }
+
+    .logo img {
+        height: 150px;
+        width: 150px;
+        margin-left: 40px;
+        border-radius: 50%;
+    }
+
+    body {
+        background-color: beige;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
+    main .cardapio {
+        display: flex;
+    }
+
+    .cardapio {
+        display: flex;
+        min-width: 750px;
+        flex-direction: column;
+        background-color: rgb(243, 242, 242);
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 200px 300px;
+        padding: 50px;
+    }
+
+    .cardapio .cardapio-title img {
+        width: 50px;
+        height: 50px;
+        margin-left: 30px;
+    }
+
+    .cardapio .cardapio-title h1 {
+        display: flex;
+        justify-content: center;
+        font-size: 200%;
+    }
+
+    hr {
+        width: 250px;
+        height: 3px;
+        background-color: #6b2d0f;
+        border-radius: 30px;
+        border: none;
+        margin-top: 15px;
+    }
+
+    .line {
+        width: 250px;
+        height: 3px;
+        background-color: #6b2e0fb0;
+        border-radius: 30px;
+        border: none;
+    }
+
+    .cardapio .line-end {
+        width: 250px;
+        height: 3px;
+        background-color: #6b2d0f;
+        border-radius: 30px;
+        border: none;
+        margin: 30px 0 20px 200px;
+    }
+
+    .cardapio h1 {
+        font-size: 35px;
+    }
+
+    .cardapio .pizzas .pizzas-text {
+        margin-top: -30px;
+        font-size: 15px;
+    }
+
+    .cardapio .bebidas .bebidas-text {
+        margin-top: -30px;
+        font-size: 15px;
+    }
+
+    .cardapio .sucos .bebidas-text {
+        margin-top: -30px;
+        font-size: 15px;
+    }
+
+    h3 {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    img {
+        width: 225px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .refri .item {
+        display: flex;
+        flex-direction: column;
+    }
 }
