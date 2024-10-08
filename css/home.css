@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-header {
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,18 +19,18 @@ header {
     z-index: 1000;
 }
 
-main {
+main{
 	display: flex;
 	justify-content: center;
 }
 
-.links {
+.links{
     display: flex;
     justify-content: space-around;
     width: 50%;
 }
 
-.links a {
+.links a{
     text-decoration: none;
     color: #fff;
     font-size: 1.2rem;
@@ -39,31 +39,31 @@ main {
     transition: 0.3s ease-in-out;
 }
 
-.links a:hover {
+.links a:hover{
     border-bottom: 3px solid #fff;
     color: #fff;
     transform: scale(1.05);
 }
 
-.logo img {
+.logo img{
     height: 150px;
     width: 150px;
     margin-left: 100px;
     border-radius: 50%;
 }
 
-body {
+body{
     background-color: beige;
 }
 
-.img-fundo {
+.img-fundo{
     width: 100%;
     height: auto;
-    filter: grayscale(0.3);
+    filter: grayscale(0.1);
     /*justify-content: ;*/
 }
 
-.img-text {
+.img-text{
     position: absolute;
     top: 50%;
     left: 27%;
@@ -73,7 +73,7 @@ body {
     font-size: 200px;
 }
 
-.img-text-p {
+.img-text-p{
     position: absolute;
     top: 63%;
     left: 30.2%;
@@ -85,37 +85,37 @@ body {
     width: 35%;
 }
 
-.introducao-site {
-    padding: 65% 0 0 5%;
+.introducao-site{
+    padding: 50% 0 0 5%;
     display: flex;
     flex-direction: row;
 }
 
-.introducaoTexto {
+.introducaoTexto{
     width: 45%;
     margin-left: 10%;
 }
 
-.introducao-site h1 {
+.introducao-site h1{
     color: #6b2d0f;
     font-size: 60px;
     margin-top: 15%;
 }
 
 
-.introducao-site p {
+.introducao-site p{
     text-align: justify;
     font-size: 20px;
     margin-top: 5%;
 }
 
-.fachada {
+.fachada{
     width: 35%;
     height: auto;
     padding: 5% 0 0 5%;
 }
 
-button {
+button{
     width: 100px;
     height: 35px;
     font-family: "Bebas Neue", sans-serif;
@@ -128,7 +128,7 @@ button {
     margin-top: 5%;
 }
 
-.sobrePizza {
+.sobrePizza{
     padding: 2% 0 0 5%;
     display: flex;
     align-items: center;
@@ -136,42 +136,31 @@ button {
     flex-direction: row-reverse;
 }
 
-.pizzaTexto {
+.pizzaTexto{
     width: 50%;
     margin-left: 5%;
 }
 
-.sobrePizza h1 {
+.sobrePizza h1{
     color: #6b2d0f;
     font-size: 60px;
     margin-top: 10%;
 }
 
-.sobrePizza p {
+.sobrePizza p{
     text-align: justify;
     font-size: 20px;
     margin-top: 5%;
     width: 90%;
 }
 
-.pizza {
+.pizza{
     width: 50%;
     height: 40%;
     padding: 5% 10% 0 0;
 }
 
-@media (max-width: 768px) {
-    .sobrePizza {
-        flex-direction: column;
-    }
-    .pizzaTexto {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 0;
-    }
-}
-
-section {
+section{
     width: 100%;
     height: 300px;
     background-position: center;
@@ -182,31 +171,31 @@ section {
 }
 
 /*Selecione o primeiro elemento que tenha a tag section*/
-section:nth-of-type(1) {
+section:nth-of-type(1){
     background-image: url(../img/pizza-fundo.jpg);
     height: 850px;
     filter: grayscale(0.1);
 }
 
-footer {
+footer{
     background-color: #333;
     color: #fff;
     padding: 20px 0;
 }
 
-footer {
+footer{
     margin-top: 75%;
 }
 
-.endereco h2 {
+.endereco h2{
     text-align: center;
 }
 
-.endereco ul {
+.endereco ul{
     text-align: center;
 }
 
-.footer-bottom {
+.footer-bottom{
     text-align: center;
     padding: 10px 0;
     background-color: #222;
@@ -214,6 +203,54 @@ footer {
     margin-top: 1%;
 }
 
-@media screen and (max-width: 1020px){
-    
+@media (max-width: 768px){
+    .logo img{
+        height: 100px;
+        width: 100px;
+        margin-left: 1px;
+    }
+    .links a{
+        font-size: 1rem;
+    }
+    header{
+        justify-content: center;
+    }
+    body{
+        background-color: rgb(206, 206, 180);
+    }
+    .fachada{
+        width: 20rem;
+        height: 25rem;
+    }
+    .introducao-site{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .introducaoTexto{
+        width: 95%;
+        margin-top: 650px;
+        margin-left: 0;
+    }
+    .img-text{
+        color: #6b2d0f;
+        font-size: 100px;
+        margin-left: 25%;
+    }
+    .img-text-p{
+        left: 37%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        color: rgba(255, 255, 255, 0.911);
+        font-size: 35px;
+    }
+    .sobrePizza h1{
+        font-size: 60px;
+    }
+    .sobre-pizza{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    footer{
+        margin-top: 1650px;
+    }
 }
