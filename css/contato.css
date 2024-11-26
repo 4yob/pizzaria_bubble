@@ -277,3 +277,26 @@ form button:hover {
         justify-content: center;
     }
 }
+
+/* Responsividade para tablet */
+@media screen and (max-width: 1024px){
+    header{
+        width: 100%;
+    }
+
+    .topo-contato{
+        width: 100%;
+    }
+
+    .main-content{
+        width: 100%;
+    }
+
+    .mapa iframe{
+        width: 100%;
+    }
+
+    .mapa{
+        width: 63.5rem;
+    }
+}
