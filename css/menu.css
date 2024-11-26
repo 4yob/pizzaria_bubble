@@ -51,6 +51,7 @@ body {
 main {
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 main .cardapio {
@@ -79,6 +80,7 @@ main .cardapio {
 .cardapio .cardapio-title h1 {
     display: flex;
     justify-content: center;
+    margin: 0 0 -20px 0;
 }
 
 hr {
@@ -104,7 +106,7 @@ hr {
     background-color: #6b2d0f;
     border-radius: 30px;
     border: none;
-    margin: 45px 0 45px 400px;
+    margin: 45px 0 45px 450px;
 }
 
 .cardapio h1 {
@@ -196,7 +198,40 @@ img {
     margin-top: 50px;
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #6b2d0f;
+    color: #fff;
+    padding: 2rem;
+}
+
+.endereco {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.endereco h2{
+    text-align: center;
+}
+
+.endereco ul{
+    list-style: none;
+    text-align: center;
+}
+
+.footer-bottom{
+    text-align: center;
+    padding: 10px 0;
+    background-color: #222;
+    font-size: 14px;
+    margin-top: 1%;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
     header {
         display: flex;
         justify-content: space-between;
@@ -319,5 +354,37 @@ img {
     .refri .item {
         display: flex;
         flex-direction: column;
+    }
+
+    footer{
+        margin-top: 100%;
+    }
+
+    .endereco h2{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .endereco ul{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .footer-bottom{
+        text-align: center;
+        padding: 10px 0;
+        background-color: #222;
+        font-size: 14px;
+        margin-top: 1%;
+    }
+
+    .footer-bottom p{
+        margin-bottom: 0;
+    }
+
+    .footer-bottom a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
     }
 }
